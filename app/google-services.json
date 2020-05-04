@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "184080275929",
+    "firebase_url": "https://limtick-6679c.firebaseio.com",
+    "project_id": "limtick-6679c",
+    "storage_bucket": "limtick-6679c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:184080275929:android:8aa0650be67e3c398ca1c8",
+        "android_client_info": {
+          "package_name": "com.proj.limtick"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "184080275929-objsl8q8g1diuhfg5hph36l9q7jda76s.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.proj.limtick",
+            "certificate_hash": "c1b64b7b07f13d06b41f4aa2fc0474e96daacbc1"
+          }
+        },
+        {
+          "client_id": "184080275929-a8aahhpf7hreotqcocikna4iaqeitsn3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCG-Gbc5wl-wVI9Dy46Kn_0plXQjA6LWko"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "184080275929-a8aahhpf7hreotqcocikna4iaqeitsn3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
