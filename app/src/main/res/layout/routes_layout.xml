@@ -24,10 +24,12 @@
         <ImageView
             android:id="@+id/hroute_pic"
             android:layout_width="match_parent"
-            android:layout_height="200dp"
+            android:layout_height="220dp"
             android:layout_below="@+id/hroute_name"
-            android:scaleType="centerCrop"
+            android:scaleType="fitXY"
             android:layout_marginTop="2dp"
+            android:adjustViewBounds="true"
+
             />
         <TextView
             android:id="@+id/hroute_price"
@@ -37,6 +39,7 @@
             android:layout_below="@+id/hroute_pic"
             android:textAlignment="center"
             android:textSize="16sp"
+            android:textStyle="bold"
 
             />
 
@@ -49,6 +52,8 @@
             android:layout_marginTop="2dp"
             android:textAlignment="center"
             android:textSize="14sp"
+            android:textStyle="bold"
+
 
             />
 

@@ -63,11 +63,21 @@ public class HomeActivity extends AppCompatActivity {
         FirebaseRecyclerAdapter<Routes, RouteViewHolder> adapter =
                 new FirebaseRecyclerAdapter<Routes, RouteViewHolder>(options) {
                     @Override
-                    protected void onBindViewHolder(@NonNull RouteViewHolder holder, int position, @NonNull Routes model) {
+                    protected void onBindViewHolder(@NonNull RouteViewHolder holder, int position, @NonNull final Routes model) {
                         holder.txtRouteName.setText(model.getRoutename());
                         holder.txtRouteDescription.setText(model.getDescription());
                         holder.txtRoutePrice.setText(model.getPrice() + " lkr");
                         Picasso.get().load(model.getImage()).into(holder.imageView);
+
+                        holder.itemView.setOnClickListener(new View.OnClickListener() {
+                            @Override
+                            public void onClick(View view) {
+                                Intent intent= new Intent(HomeActivity.this,SelectActivity.class);
+                                intent.putExtra("rid",model.getRid());
+                                startActivity(intent);
+
+                            }
+                        });
 
 
                     }

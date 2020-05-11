@@ -2,17 +2,18 @@ package com.proj.limtick.Model;
 
 public class Routes
 {
-    private String routename,price,description,image;
+    private String routename,price,description,image,rid;
     public Routes()
     {
 
     }
 
-    public Routes(String routename, String price, String description, String image) {
+    public Routes(String routename, String price, String description, String image, String rid) {
         this.routename = routename;
         this.price = price;
         this.description = description;
         this.image = image;
+        this.rid = rid;
     }
 
     public String getRoutename() {
@@ -26,6 +27,7 @@ public class Routes
     public String getPrice() {
         return price;
     }
+
 
     public void setPrice(String price) {
         this.price = price;
@@ -45,5 +47,14 @@ public class Routes
 
     public void setImage(String image) {
         this.image = image;
+    }
+
+    public String getRid() {
+        return rid;
+    }
+
+
+    public void setRid(String rid) {
+        this.rid = rid;
     }
 }

@@ -187,6 +187,7 @@ public class AdminAddNewRouteActivity extends AppCompatActivity {
     private void SaveRouteInfoToDatabase() {
 
         HashMap<String,Object>routeMap=new HashMap<>();
+        routeMap.put("rid",routeRandomKey);
         routeMap.put("date",saveCurrentDate);
         routeMap.put("time",saveCurrentTime);
         routeMap.put("description",Description);
@@ -201,6 +202,8 @@ public class AdminAddNewRouteActivity extends AppCompatActivity {
 
                         if (task.isSuccessful())
                         {
+                            Intent intent = new Intent(AdminAddNewRouteActivity.this,HomeActivity.class);
+                            startActivity(intent);
 
 
                             loadingBar.dismiss();
