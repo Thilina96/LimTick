@@ -19,7 +19,9 @@
             android:text="Route Name"
             android:textAlignment="center"
             android:textSize="20sp"
+            android:background="#DCDCDC"
             android:textStyle="bold"
+            android:textColor="#000000"
             />
         <ImageView
             android:id="@+id/hroute_pic"
@@ -28,7 +30,9 @@
             android:layout_below="@+id/hroute_name"
             android:scaleType="fitXY"
             android:layout_marginTop="2dp"
+            android:background="#DCDCDC"
             android:adjustViewBounds="true"
+
 
             />
         <TextView
@@ -38,8 +42,10 @@
             android:text="Route Price"
             android:layout_below="@+id/hroute_pic"
             android:textAlignment="center"
+            android:background="#DCDCDC"
             android:textSize="16sp"
             android:textStyle="bold"
+            android:textColor="#000000"
 
             />
 
@@ -51,8 +57,10 @@
             android:layout_below="@+id/hroute_price"
             android:layout_marginTop="2dp"
             android:textAlignment="center"
+            android:background="#DCDCDC"
             android:textSize="14sp"
             android:textStyle="bold"
+            android:textColor="#000000"
 
 
             />

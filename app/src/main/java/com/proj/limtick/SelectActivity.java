@@ -30,7 +30,9 @@ public class SelectActivity extends AppCompatActivity {
     private String routeID = "";
     EditText time_edt;
     TimePickerDialog timePickerDialog;
-    private int  mHour, mMinute;
+    String amPm;
+    private final static int TIME_PICKER_INTERVAL = 15;
+    private boolean mIgnoreEvent=false;
 
 
     @Override
@@ -52,12 +54,32 @@ public class SelectActivity extends AppCompatActivity {
 
         time_edt.setOnClickListener(new View.OnClickListener() {
             @Override
+
             public void onClick(View view) {
-                timePickerDialog= new TimePickerDialog(SelectActivity.this, new TimePickerDialog.OnTimeSetListener() {
+                timePickerDialog= new TimePickerDialog(SelectActivity.this, android.R.style.Theme_Holo_Light_Dialog_MinWidth, new TimePickerDialog.OnTimeSetListener() {
+
                     @Override
                     public void onTimeSet(TimePicker timePicker, int hourOfDay, int minutes) {
+                        int nextMinute = 0;
+                        if (minutes> 0 && minutes <= 15)
+                            nextMinute = 15;
+                        else if(minutes > 15 && minutes <= 30)
+                            nextMinute = 30;
+                        else if(minutes > 30 && minutes <= 45)
+                            nextMinute = 45;
 
-                        time_edt.setText(hourOfDay + ":" + minutes);
+                        else {
+                            nextMinute = 0;
+                        }
+
+                        if (hourOfDay>=12){
+                            amPm="PM";
+                        }else {
+                            amPm="AM";
+                        }
+
+
+                        time_edt.setText(String.format("%02d:%02d", hourOfDay,nextMinute) + amPm );
 
 
                     }
@@ -65,8 +87,11 @@ public class SelectActivity extends AppCompatActivity {
                         timePickerDialog.show();
 
 
+
+
             }
         });
+        
     }
 
 

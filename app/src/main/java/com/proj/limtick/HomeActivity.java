@@ -121,14 +121,18 @@ public class HomeActivity extends AppCompatActivity {
                 startActivity(intent);
                 finish();
 
-
-                case  R.id.action_add:
-                Intent intent1 = new Intent(HomeActivity.this,AdminAddNewRouteActivity.class);
+            case R.id.action_add:
+                Intent intent1 = new Intent(HomeActivity.this, TableActivity.class);
                 startActivity(intent1);
+                return true;
+
+
 
 
         }
-        return super.onOptionsItemSelected(item);
+
+
+                return super.onOptionsItemSelected(item);
     }
     private void displayMessage(String message)
     {

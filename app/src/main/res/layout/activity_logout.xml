@@ -1,14 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".LogoutActivity">
+    android:id="@+id/seatLayoutLowerMain"
+    android:layout_width="wrap_content"
+    android:layout_height="fill_parent"
+    android:layout_below="@+id/seatLegendLayout"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="10.0dip"
+    android:paddingBottom="5.0dp"
+    android:paddingRight="5.0dp" >
 
-    <Button
-        android:id="@+id/lgt_btn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Button" />
+    <GridView
+        android:id="@+id/gridView1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_margin="40dp"
+        android:columnWidth="100dp"
+        android:gravity="center"
+        android:numColumns="4"
+
+
+
+        android:stretchMode="columnWidth"
+        >
+    </GridView>
+
+
 </RelativeLayout>

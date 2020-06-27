@@ -4,18 +4,19 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/des"
+    android:background="@drawable/white"
     tools:context=".RegisterActivity">
 
     <ImageView
         android:id="@+id/register_app_logo"
-        android:layout_width="300dp"
-        android:layout_height="100dp"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="70dp"
-        android:src="@drawable/reg"
-        android:alpha="0.6"
+        android:src="@drawable/cc"
+
         />
+
     <EditText
         android:id="@+id/register_username"
         android:layout_width="match_parent"
@@ -23,7 +24,7 @@
         android:layout_below="@+id/register_app_logo"
         android:layout_marginLeft="15dp"
         android:layout_marginRight="15dp"
-        android:layout_marginTop="200dp"
+        android:layout_marginTop="100dp"
         android:background="@drawable/input_design"
         android:hint="UserName"
         android:inputType="text"

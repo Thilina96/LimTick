@@ -5,17 +5,17 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/dd"
+    android:background="@drawable/blck"
     tools:context=".MainActivity">
 
 
     <ImageView
         android:id="@+id/app_logo"
         android:layout_width="300dp"
-        android:layout_height="100dp"
+        android:layout_height="200dp"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="60dp"
-        android:src="@drawable/ere"
+        android:src="@drawable/aaa"
         />
 
 
@@ -23,16 +23,16 @@
         android:id="@+id/app_slogan"
         android:layout_width="220dp"
         android:layout_height="wrap_content"
+        android:layout_below="@+id/app_logo"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginTop="164dp"
-        android:layout_marginEnd="75dp"
-        android:textColor="#002"
+        android:layout_marginTop="276dp"
+        android:layout_marginEnd="61dp"
         android:text="Limited Bus Seat Reservation System"
         android:textAlignment="center"
+        android:textColor="#fff"
         android:textSize="16sp"
-        android:textStyle="bold|italic"
-        />
+        android:textStyle="bold|italic" />
 
     <Button
         android:id="@+id/main_login_btn"

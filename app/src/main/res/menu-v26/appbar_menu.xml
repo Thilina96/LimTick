@@ -6,7 +6,7 @@
     <item
         android:id="@+id/action_add"
         android:title="AddRoute"
-        android:icon="@drawable/ic_add"
+        android:icon="@drawable/ic_event_black_24dp"
         android:iconTint="@android:color/white"
         app:showAsAction="ifRoom"
 

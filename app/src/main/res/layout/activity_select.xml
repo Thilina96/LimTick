@@ -3,6 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:background="#000000"
     android:layout_height="match_parent"
     tools:context=".SelectActivity">
     
@@ -25,6 +26,7 @@
         android:gravity="center"
         android:layout_marginTop="5dp"
         />
+
     <TextView
         android:id="@+id/select_desc"
         android:layout_width="match_parent"
@@ -56,6 +58,7 @@
         android:layout_height="wrap_content"
         android:elevation="5dp"
         app:initialNumber="1"
+        android:background="@color/colorPrimaryDark"
         app:finalNumber="2"
         android:layout_below="@+id/select_ticket"
         android:layout_centerHorizontal="true"
@@ -72,6 +75,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="40dp"
         android:ems="10"
+        android:textAlignment="center"
         android:inputType="textPersonName"
         android:hint="Select Time"/>
     <TextView
@@ -86,7 +90,23 @@
         android:gravity="center"
         android:layout_marginTop="30dp"
         />
+    <Button
+        android:id="@+id/nxt_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/number_btn"
+        android:layout_marginTop="70dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"
+        android:background="@color/colorPrimaryDark"
+        android:gravity="center"
+        android:padding="17dp"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        android:text="Next"
 
+        android:textColor="@android:color/white"
+        />
 
 
 </RelativeLayout>
