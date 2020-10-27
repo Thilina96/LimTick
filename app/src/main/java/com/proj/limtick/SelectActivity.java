@@ -4,6 +4,7 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.TimePickerDialog;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -25,6 +26,7 @@ import java.util.Calendar;
 public class SelectActivity extends AppCompatActivity {
 
     private ImageView rouImage;
+    private Button nextbutton;
     private ElegantNumberButton numbutton;
     TextView routename,routedesc,routeprice;
     private String routeID = "";
@@ -48,6 +50,15 @@ public class SelectActivity extends AppCompatActivity {
         routedesc = (TextView) findViewById(R.id.select_desc);
         routeprice = (TextView) findViewById(R.id.select_price);
         time_edt=(EditText)findViewById(R.id.selecttime);
+        nextbutton=(Button) findViewById(R.id.nxt_btn);
+
+        nextbutton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(SelectActivity.this,SeatActivity.class);
+                startActivity(intent);
+            }
+        });
 
 
         getRouteDetails(routeID);

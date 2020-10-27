@@ -6,4 +6,29 @@
     android:layout_height="match_parent"
     tools:context=".LayoutActivity">
 
+    <Button
+        android:id="@+id/button_noti"
+        android:layout_width="128dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="210dp"
+        android:layout_marginBottom="55dp"
+        android:background="@color/colorPrimaryDark"
+        android:text="Send Notification"
+        android:textColor="#ffffff"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/button_submit"
+        android:layout_width="128dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="18dp"
+        android:layout_marginBottom="55dp"
+        android:background="@color/colorPrimaryDark"
+        android:text="Submit"
+        android:textColor="#ffffff"
+        android:textStyle="bold" />
 </RelativeLayout>
